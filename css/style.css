@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #C03D22;
+    --secondary-color: #ECE9E4;
+    --dark-color: #0D0C0B;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color:#C03D22;
+    
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 10px auto;
+}
+
+/* Trabajos */
+.img-fluid {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* Contacto */
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(192, 61, 34, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #a33219;
+    border-color: #a33219;
+}
+
+.map-container {
+    height: 100%;
+    min-height: 450px;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+}
+
+.social-links a {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+    
+    .map-container {
+        margin-top: 2rem;
+    }
+}
+
+.nav-link {
+    color: var(--dark-color);
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+
+
+.fab, .fab-whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    color: green;
+    font-size: 3.5rem;
+}
+   
+   
+
+
+html {
+    overflow-x: hidden;
+
+}
