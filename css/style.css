@@ -117,12 +117,12 @@ footer {
     color: var(--dark-color);
 }
 
-.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7 {
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9, .foto10 {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-iframe{
+video{
     width: 100%;
     height: 300px;
     border-radius: 10px;
@@ -145,4 +145,9 @@ iframe{
 html {
     overflow-x: hidden;
 
+}
+
+
+.parrafo-wp{
+    font-size: 10px;
 }

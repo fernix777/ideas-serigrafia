@@ -50,7 +50,9 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <p class="text-center">
-                        Ideas Serigrafía nació en 2010 con la visión de transformar ideas en arte impreso. 
+                        Ideas Serigrafía nació hace 50 años en la ciudad de Buenos Aires, trayendo hacia la tierra roja toda la experiencia y modernismo de la capital.
+                    </p>
+                    <p class="text-center"> 
                         Nos especializamos en la creación de diseños únicos y personalizados utilizando técnicas 
                         tradicionales de serigrafía combinadas con tecnología moderna. Nuestro equipo de artistas 
                         y técnicos especializados trabaja incansablemente para garantizar la más alta calidad en 
@@ -96,13 +98,13 @@
                     <img src="/img/WhatsApp Image 2024-11-08 at 18.04.38.jpeg" class="img-fluid foto7 rounded" alt="Trabajo 7">
                 </div>
                 <div class="col-md-4 col-6">
-                    <img src="https://picsum.photos/400/300?random=8" class="img-fluid rounded" alt="Trabajo 8">
+                    <img src="/img/WhatsApp Image 2024-11-08 at 18.04.41 (1).jpeg" class="img-fluid foto8 rounded" alt="Trabajo 8">
                 </div>
                 <div class="col-md-4 col-6">
-                    <img src="https://picsum.photos/400/300?random=9" class="img-fluid rounded" alt="Trabajo 9">
+                    <img src="/img/WhatsApp Image 2024-11-08 at 18.04.43.jpeg" class="img-fluid foto9 rounded" alt="Trabajo 9">
                 </div>
                 <div class="col-md-4 col-6">
-                    <img src="https://picsum.photos/400/300?random=10" class="img-fluid rounded" alt="Trabajo 10">
+                    <img src="/img/WhatsApp Image 2024-11-08 at 18.05.01.jpeg" class="img-fluid foto10 rounded" alt="Trabajo 10">
                 </div>
             </div>
 
@@ -111,12 +113,12 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/watch?v=Ugf3CWAXwrE" allowfullscreen></iframe>
+                        <video src="/videos/WhatsApp Video 2024-11-08 at 18.05.00.mp4" allowfullscreen controls poster="/img/Logo.jpg"></video>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                        <video src="/videos/WhatsApp Video 2024-11-08 at 18.04.43.mp4" allowfullscreen controls poster="/img/Logo.jpg"></video>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -139,24 +141,24 @@
             <h2 class="text-center mb-4">Contacto</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <form name="contact" netlify>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label>Tu Nombre: <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                          <label>Tu Email: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          
+                        </p>
+                        <p>
+                          <label>Mensaje: <textarea class="form-control" name="message"></textarea></label>
+                        </p>
+                        <p>
+                          <button class="btn btn-primary" type="submit">enviar</button>
+                        </p>
+                      </form>
+                      
                     </form>
                 </div>
                 <div class="col-md-6">
@@ -181,8 +183,10 @@
         </div>
     </section>
     <a href="https://wa.me/+5493764695751" target="_blank" class="me-3">
-        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-whatsapp"><p class="text-center parrafo-wp">mandanos un mensaje</p></i>
     </a>
+    
+    
 
     <!-- Footer -->
     <footer class="py-4">
