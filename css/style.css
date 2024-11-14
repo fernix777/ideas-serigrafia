@@ -124,16 +124,19 @@ video{
     height: 300px;
     border-radius: 10px;
 
+
 }
 
 
 
 .fab, .fab-whatsapp {
+    width: 50px;
+    height: auto;
     position: fixed;
     right: 20px;
     bottom: 40px;
     color: green;
-    font-size: 3.5rem;
+    
 }
    
    
@@ -147,4 +150,24 @@ html {
 
 .parrafo-wp{
     font-size: 10px;
+}
+
+.social-icon{
+    width: 50px;
+    height: auto;
+    rotate: -10deg;
+    position: relative;
+    left: -200px;
+    top: -5px;
+
+
+
+}
+.social-icon2{
+    width: 40px;
+    height: auto;
+    
+    position: relative;
+    left: -200px;
+    top: -5px;
 }
