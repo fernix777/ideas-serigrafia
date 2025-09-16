@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ideas-serigrafia.com.ar/sitemap.xml
+
+# Prevent crawling of admin and development files
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /*.php$
+Disallow: /*.inc$
+
+# Allow all robots to crawl the website
+User-agent: *
+Crawl-delay: 10

@@ -1,0 +1,107 @@
+/* Estilos para el formulario de contacto */
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form .form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.contact-form .input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+}
+
+/* Estilos para la sección del mapa */
+.map-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-info {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.map-container {
+    flex: 1;
+    min-height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Estilos para el botón de enviar */
+#submit-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#submit-btn .spinner-border {
+    margin-right: 0.5rem;
+}
+
+/* Estilos para mensajes de validación */
+.invalid-feedback {
+    font-size: 0.85rem;
+    color: #dc3545;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Efecto hover en dispositivos con mouse */
+@media (hover: hover) {
+    #submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+    }
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .contact-form {
+        margin-bottom: 2rem;
+    }
+    
+    .map-section {
+        height: 400px;
+    }
+}
